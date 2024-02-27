@@ -32,6 +32,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     public async Task UpdateAsync(T entity)
     {
         _context.Entry(entity).State = EntityState.Modified;
+        _context.Entry(entity).Property(x => x.DateCreated).IsModified = false;
         await _context.SaveChangesAsync();
     }
     public async Task DeleteAsync(T entity)

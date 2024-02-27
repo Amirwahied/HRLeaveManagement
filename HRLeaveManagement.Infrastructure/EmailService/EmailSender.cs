@@ -1,8 +1,8 @@
 ﻿using HRLeaveManagement.Application.Contracts.Email;
 using HRLeaveManagement.Application.Models.Email;
-using SendGrid.Helpers.Mail;
-using SendGrid;
 using Microsoft.Extensions.Options;
+using SendGrid;
+using SendGrid.Helpers.Mail;
 
 namespace HRLeaveManagement.Infrastructure.EmailService;
 

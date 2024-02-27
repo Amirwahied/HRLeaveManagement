@@ -1,9 +1,10 @@
-﻿using HRLeaveManagement.Application.Features.LeaveType.Command.DeleteLeaveType;
-using HRLeaveManagement.Application.Features.LeaveType.Command.CreateLeaveType;
+﻿using HRLeaveManagement.Application.Features.LeaveType.Command.CreateLeaveType;
+using HRLeaveManagement.Application.Features.LeaveType.Command.DeleteLeaveType;
 using HRLeaveManagement.Application.Features.LeaveType.Command.UpdateLeaveType;
 using HRLeaveManagement.Application.Features.LeaveType.Queries.GetAllLeaveTypes;
 using HRLeaveManagement.Application.Features.LeaveType.Queries.GetLeaveTypeDetails;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,6 +13,7 @@ namespace HRLeaveManagement.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class LeaveTypesController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -49,11 +51,11 @@ namespace HRLeaveManagement.API.Controllers
         }
 
         // PUT api/<LeaveTypesController>/5
-        [HttpPut]
+        [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult> Put([FromBody] UpdateLeaveTypeCommand leaveType)
+        public async Task<ActionResult> Put(int id, [FromBody] UpdateLeaveTypeCommand leaveType)
         {
             var response = await _mediator.Send(leaveType);
             return NoContent();

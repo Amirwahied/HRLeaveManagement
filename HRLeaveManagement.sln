@@ -25,9 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRLeaveManagement.Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRLeaveManagement.API", "HRLeaveManagement.API\HRLeaveManagement.API.csproj", "{C4A23DAF-FB11-49F5-8843-F45FBBC34C8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRLeaveManagement.Application.UnitTests", "HRLeaveManagement.Application.UnitTests\HRLeaveManagement.Application.UnitTests.csproj", "{5647E972-B4A2-4FAD-9A3A-1BDC02034B25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRLeaveManagement.Application.UnitTests", "HRLeaveManagement.Application.UnitTests\HRLeaveManagement.Application.UnitTests.csproj", "{5647E972-B4A2-4FAD-9A3A-1BDC02034B25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRLeaveManagement.Presistence.IntegrationTests", "HRLeaveManagement.Presistence.IntegrationTests\HRLeaveManagement.Presistence.IntegrationTests.csproj", "{2EDD09EF-715D-408B-A313-50D56EB0D080}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRLeaveManagement.Presistence.IntegrationTests", "HRLeaveManagement.Presistence.IntegrationTests\HRLeaveManagement.Presistence.IntegrationTests.csproj", "{2EDD09EF-715D-408B-A313-50D56EB0D080}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRLeaveManagement.BlazorUI", "HRLeaveManagement.BlazorUI\HRLeaveManagement.BlazorUI.csproj", "{AA3FB673-0577-4920-BD1F-0BF9292A2773}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRLeaveManagement.Identity", "HRLeaveManagement.Identity\HRLeaveManagement.Identity.csproj", "{247C26ED-B579-4954-8BDE-A0E37EEBA355}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{2EDD09EF-715D-408B-A313-50D56EB0D080}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EDD09EF-715D-408B-A313-50D56EB0D080}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EDD09EF-715D-408B-A313-50D56EB0D080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3FB673-0577-4920-BD1F-0BF9292A2773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3FB673-0577-4920-BD1F-0BF9292A2773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3FB673-0577-4920-BD1F-0BF9292A2773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3FB673-0577-4920-BD1F-0BF9292A2773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247C26ED-B579-4954-8BDE-A0E37EEBA355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247C26ED-B579-4954-8BDE-A0E37EEBA355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247C26ED-B579-4954-8BDE-A0E37EEBA355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247C26ED-B579-4954-8BDE-A0E37EEBA355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +91,8 @@ Global
 		{C4A23DAF-FB11-49F5-8843-F45FBBC34C8D} = {1174B9AB-DC95-4161-86AC-6699E503FBE9}
 		{5647E972-B4A2-4FAD-9A3A-1BDC02034B25} = {DBD40F87-72B6-45B7-BC4D-0726FA7B0151}
 		{2EDD09EF-715D-408B-A313-50D56EB0D080} = {DBD40F87-72B6-45B7-BC4D-0726FA7B0151}
+		{AA3FB673-0577-4920-BD1F-0BF9292A2773} = {3A59CB10-D5A2-442E-93E9-E2D7D27F4311}
+		{247C26ED-B579-4954-8BDE-A0E37EEBA355} = {60F3F4A7-B76D-47CD-B072-32C6F4D2A2A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B6837C8-4FF7-4536-B629-87D26F7BACAD}
